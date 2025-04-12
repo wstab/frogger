@@ -60,7 +60,7 @@ def get_data(game_file, info):
 
 # checks for any user inputs the would cause index errors or type errors, etc
 def check_error(roads, move, frog_row, frog_col, jumps):
-    if move not in 'wasdquit' and 'j' not in move[0]:
+    if move not in 'wasdquit' and 'j' not in move[0] or ('j' in move[0] and len(move) != 5):
         print("This isn't a valid input")
         return True
     elif (move == 'w' and frog_row == 0) or (move == 'd' and frog_col == len(roads[frog_row]) - 1) or (move == 'a' and frog_col == 0):
