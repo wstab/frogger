@@ -8,7 +8,7 @@ This program is a frogger console game in which you have to land on the X's (log
 
 * Clone the repo
 ```
-git clone https://github.com/wstab/wstab-frogger.git
+git clone https://github.com/wstab/frogger.git
 ```
 
 ### Executing program
